@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+</head>
+    <body>
+    
+        <ul>
+            <li><a href="{% url 'contact_us' %}">Contact us</a></li>
+            <li><a href="{% url 'mov_detail' %}">Best movie</a></li>
+        </ul>
+
+        <h1>Movie Detail</h1>
+        <h4>The best movie of the month is:</h4>
+        <h2>Title: {{mov_title}}</h2>
+        <ul>
+            <li>Movie Author: {{author}}</li>
+            <li>Release year: {{release_year}}</li>
+            <li>Movie language: {{language}}</li>
+        </ul>
+
+    </body>
+</html>
